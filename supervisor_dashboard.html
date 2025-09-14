@@ -12,13 +12,16 @@
   <!-- HTMX -->
   <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navbar with Toggle -->
   <nav class="navbar navbar-dark bg-dark justify-content-evenly">
     <button class="btn btn-outline-light d-md-none" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#agentSidebar">
+      data-bs-target="#Sidebar">
       <i class='bx bx-menu'></i>
     </button>
     <h3 class="text-center m-0">Target: 500 | Actual: 412</h3>
@@ -26,18 +29,19 @@
 
   <div class="d-flex">
     <!-- Sidebar (desktop view) -->
-    <div class="offcanvas offcanvas-start bg-dark text-white p-3" tabindex="-1" id="agentSidebar" style="width: 260px;">
+    <div class="offcanvas offcanvas-start bg-dark text-white p-3" tabindex="-1" id="Sidebar" style="width: 260px;">
       <!-- Header for mobile -->
       <div class="offcanvas-header d-md-none">
-        <h5 class="offcanvas-title">Menu</h5>
+        <img src="Logo.jpg" alt="Logo" class="img-fluid me-2" style="height: 40px; border-radius: 50%; ">
+        <h5 class="offcanvas-title">CityPlan</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
       </div>
 
       <!-- Supervisor Profile -->
       <div class="mb-4">
         <h5 class="mb-1">Supervisor: 31 987654</h5>
-        <span class="badge bg-success">Active</span>
       </div>
+      <hr>
 
       <!-- Sidebar - Send Transaction Button -->
       <div class="mb-3">
@@ -291,4 +295,3 @@
 </body>
 
 </html>
-
