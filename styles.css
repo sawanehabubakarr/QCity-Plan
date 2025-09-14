@@ -1,0 +1,161 @@
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff, #fdf4ec);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* Futuristic cards with subtle glow */
+    .kpi, .card {
+      border-radius: 1.2rem;
+      background: #ffffffd9;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(253, 155, 49, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .kpi:hover, .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(253, 155, 49, 0.25);
+    }
+
+    .kpi .text-secondary {
+      font-weight: 500;
+      color: #777 !important;
+    }
+
+    /* Futuristic table */
+    table {
+      border-collapse: separate;
+      border-spacing: 0 8px;
+    }
+
+    table thead th {
+      color: #fd9b31;
+      font-weight: 600;
+      border: none;
+    }
+
+    table tbody tr {
+      background: #fff;
+      border-radius: 0.8rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    table tbody tr:hover {
+      background: #fff6ef;
+    }
+
+    /* Futuristic buttons */
+    .btn-primary {
+      background: linear-gradient(135deg, #fd9b31, #ffb866);
+      border: none;
+      color: #000;
+      font-weight: 600;
+      border-radius: 30px;
+      box-shadow: 0 3px 12px rgba(253, 155, 49, 0.3);
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 4px 20px rgba(253, 155, 49, 0.6);
+      transform: scale(1.05);
+    }
+
+    .btn-light {
+      background: #fafafa;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      color: #444;
+    }
+
+    .form-control {
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #333;
+      border-radius: 0.8rem;
+    }
+
+    .form-control:focus {
+      border-color: #fd9b31;
+      box-shadow: 0 0 10px rgba(253, 155, 49, 0.3);
+    }
+
+    /* Modal futuristic style */
+    .modal-content {
+      background: #fff;
+      border: 1px solid #fd9b31;
+      box-shadow: 0 0 25px rgba(253, 155, 49, 0.2);
+      border-radius: 1rem;
+    }
+
+    .badge {
+      border-radius: 0.5rem;
+    }
+
+    h5, h6 {
+      color: #fd9b31;
+    }
+
+    /* Futuristic Navbar */
+    .navbar {
+      background: #ffffffd9;
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(90deg, #fd9b31, #ffcf87, #fd9b31) 1;
+      box-shadow: 0 4px 20px rgba(253, 155, 49, 0.2);
+      animation: glowBorder 5s linear infinite;
+    }
+
+    @keyframes glowBorder {
+      0% { border-image-source: linear-gradient(90deg, #fd9b31, #ffcf87, #fd9b31); }
+      50% { border-image-source: linear-gradient(90deg, #ffcf87, #fd9b31, #ffcf87); }
+      100% { border-image-source: linear-gradient(90deg, #fd9b31, #ffcf87, #fd9b31); }
+    }
+
+    h3, h4 {
+      color: #fd9b31;
+    }
+
+    .navbar-nav .nav-link {
+      color: #444;
+      font-weight: 500;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #fd9b31;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #fd9b31;
+      transition: width 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .btn-logout {
+      background: linear-gradient(135deg, #fd9b31, #ffb866);
+      border: none;
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-weight: 600;
+      color: #000;
+      transition: all 0.3s;
+    }
+
+    .btn-logout:hover {
+      box-shadow: 0 0 15px rgba(253, 155, 49, 0.6);
+      transform: scale(1.07);
+    }
