@@ -11,7 +11,47 @@
 </head>
 
 <body>
+      <!-- Navbar with Toggle -->
+  <nav class="navbar navbar-dark bg-dark justify-content-evenly">
+    <button class="btn btn-outline-light d-md-none" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#agentSidebar">
+      <i class='bx bx-menu'></i>
+    </button>
+    <h3 class="text-center m-0">Target: 5000 | Actual: 4012</h3>
+  </nav>
 
+  <div class="d-flex">
+    <!-- Sidebar (desktop view) -->
+    <div class="offcanvas offcanvas-start bg-dark text-white p-3" tabindex="-1" id="agentSidebar" style="width: 260px;">
+      <!-- Header for mobile -->
+      <div class="offcanvas-header d-md-none">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <!-- Supervisor Profile -->
+      <div class="mb-4">
+        <h5 class="mb-1">31 987654</h5>
+        <span class="badge bg-success">Active</span>
+      </div>
+
+      <!-- Sidebar - Manage Supervisors Button -->
+      <div class="mb-3">
+        <button class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#manageSupervisorsModal">
+          <i class='bx bx-user me-1'></i>Manage Supervisors
+        </button>
+        <hr>
+        <button class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#manageAgentsModal">
+            <i class='bx bx-user me-1'></i>Manage Agents
+        </button>
+      </div>
+
+
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1">
     <!-- Supervisor ID Snapshot Modal -->
     <div class="modal fade" id="idSnapshotModal">
         <div class="modal-dialog modal-lg">
@@ -127,7 +167,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-light">Cancel</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                 </form>
             </div>
         </div>
@@ -183,7 +223,7 @@
                         <td>31 123456</td>
                         <td>
                             <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#editSupervisorModal">Edit</button>
+                                data-bs-target="#editAgentModal">Edit</button>
                             <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal"
                                 data-bs-target="#deleteSupervisor">Delete</button>
                         </td>
@@ -216,7 +256,7 @@
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="button" class="btn btn-light">Cancel</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                 </form>
             </div>
         </div>
@@ -244,7 +284,7 @@
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Update</button>
-                    <button type="button" class="btn btn-light">Cancel</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                 </form>
             </div>
         </div>
@@ -279,7 +319,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="button" class="btn btn-light">Cancel</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                 </form>
             </div>
         </div>
@@ -314,7 +354,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-light">Cancel</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                 </form>
             </div>
         </div>
