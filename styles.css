@@ -159,3 +159,12 @@
       box-shadow: 0 0 15px rgba(253, 155, 49, 0.6);
       transform: scale(1.07);
     }
+
+
+    /* Font size of 12.95px for small screens */
+    @media (max-width: 576px) {
+      td {
+        font-size: 12.95px;
+      }
+      
+    }
