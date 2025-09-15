@@ -161,10 +161,11 @@
     }
 
 
-
+    /* Font size of 12.95px for small screens */
+    @media (max-width: 576px) {
       td {
         font-size: 12.95px;
         color: red;
       }
-      
+    }
 
